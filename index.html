@@ -146,7 +146,7 @@
             </div>
             <form>
                 <div>
-                    <label for="flname">Name:</label>
+                    <label class="under" for="flname">Name:</label>
                     <input
                         type="text"
                         name="flname"
@@ -155,16 +155,41 @@
                     />
                 </div>
                 <div>
-                    <label for="feedback">Give your feedback here</label>
+                    <label class="under" for="feedback"
+                        >Give your feedback here</label
+                    >
                     <textarea
+                        class="under"
+                        placeholder="text"
                         name="feedback"
                         id="feedback"
                         rows="5"
                         cols="30"
                     ></textarea>
                 </div>
+                <div>
+                    <label for="loved-it">Loved it</label>
+                    <input
+                        class="side"
+                        id="loved-it"
+                        type="radio"
+                        name="loved-it"
+                    />
+                    <label for="ok">Ok</label>
+                    <input class="side" id="ok" type="radio" name="ok" />
+                    <label for="horrible">Horrible</label>
+                    <input
+                        class="side"
+                        id="horrible"
+                        type="radio"
+                        name="horrible"
+                    />
+                </div>
+                <button>Submit</button>
             </form>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Thank you for joining me on my adventures</p>
+        </footer>
     </body>
 </html>
