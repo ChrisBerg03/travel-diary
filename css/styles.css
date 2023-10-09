@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
+    margin: 0 70px 0 70px;
     font-size: 20px;
     background-color: #1e1e1e;
     color: white;
@@ -15,7 +19,7 @@ body {
 } */
 
 header {
-    padding: 16px;
+    padding: 16px 0 8px 0;
     border-bottom: solid 2px grey;
 
 }
@@ -36,18 +40,33 @@ a:active {
 nav {
     height: 64px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: end;
 }
 
 
-nav li {
+nav ul li {
     display: inline;
     text-align: center;
-    padding-right: 35px;
+    padding: 0 35px 0 0;
 }
 
-img {
-    height: 64px;
+nav ul {
+    padding: 0;
+}
+
+li, ul {
+    margin: 0 0 8px 0;
+    padding: 8px 0 0 0;
+}
+
+.introduction {
+    padding: 0 0 32px 0;
+}
+
+img, p {
+    width: 50vw;
+}
+
+form {
+    display: block;
 }
